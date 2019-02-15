@@ -11,22 +11,23 @@ app.use(express.static('public'));
 
 app.get('/', function (req, res) {
   //res.send('Hello World!')
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Práctica 1: Aplicación web' });
 })
 
 /*
  var router = express.Router();
   module.exports = router; 
 */
-app.get('/chuchu', function (req, res) {
+app.get('/pagsig', function (req, res) {
   //res.send('Hello Chuchu!')
-  res.render('index', { title: 'Chuchu' });
+  res.render('index', { title: 'Página siguiente' });
 })
 
 app.get('/cat', function (req, res) {
   res.send('Got a GET request'+
     '<br/><img src="kitten.jpg" />'
   );
+	
 })
 
 app.get('/dog', function (req, res) {
